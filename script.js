@@ -68,11 +68,11 @@ var tooltipVar = {
 var sliderDay = undefined;
 var playButton = d3.select("#play-button");;
 
-d3.csv('https://moomookau.github.io/data/merged.csv')
+d3.csv('merged.csv')
 .then(function(csvdata) {
 	data = csvdata;
 
-	d3.json('https://moomookau.github.io/map/ne_10m_simplified.json')
+	d3.json('ne_10m_simplified.json')
 	.then(function(jsonworlddata) {
 
 		worlddata = jsonworlddata;
